@@ -1,0 +1,29 @@
+{
+  "project_info": {
+    "project_number": "934123934854",
+    "project_id": "shop-app-b3239",
+    "storage_bucket": "shop-app-b3239.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:934123934854:android:19398ab397e874c290ed07",
+        "android_client_info": {
+          "package_name": "com.berfinilik.shopapp"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyD2gRNPGg2qspv-F1_iuqsgQj7FZviYY70"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
