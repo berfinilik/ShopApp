@@ -90,11 +90,10 @@ class DetailActivity : BaseActivity() {
         binding.addToCartBtn.setOnClickListener {
             item.numberInCart = numberOder
             managmentCart.insertFood(item)
-        }
-        binding.backBtn.setOnClickListener { finish() }
-        binding.addToCartBtn.setOnClickListener {
             Toast.makeText(this,"Sepete eklendi",Toast.LENGTH_SHORT).show()
         }
+        binding.backBtn.setOnClickListener { finish() }
+
         binding.cartSepet.setOnClickListener {
             startActivity(Intent(this, CartActivity::class.java))
         }

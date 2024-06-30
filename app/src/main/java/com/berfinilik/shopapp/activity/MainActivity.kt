@@ -50,11 +50,24 @@ class MainActivity : BaseActivity() {
                 )
             )
         }
+        binding.cartAnasayfa.setOnClickListener {
+            startActivity(
+                Intent(this,MainActivity::class.java)
+            )
+        }
         binding.cartFavoriler.setOnClickListener {
             startActivity(
                 Intent(
                     this@MainActivity,
                     FavouritesActivity::class.java
+                )
+            )
+        }
+        binding.cartProfil.setOnClickListener {
+            startActivity(
+                Intent(
+                    this@MainActivity,
+                    UserInfoActivity::class.java
                 )
             )
         }

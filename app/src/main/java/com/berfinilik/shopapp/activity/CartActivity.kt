@@ -19,12 +19,19 @@ class CartActivity : BaseActivity() {
         binding = ActivityCartBinding.inflate(layoutInflater)
         setContentView(binding.root)
 
+        managmentCart = ManagmentCart(this)
+
+        cartAdapter=CartAdapter(managmentCart.getListCart(),this,object:
+        ChangeNumberItemsListener{
+            override fun onChanged() {
+                calculateCart()
+            }
+        })
+
         binding.buttonOnayla.setOnClickListener {
             Snackbar.make(binding.main, "Sepet onaylandı", Snackbar.LENGTH_SHORT).show()
         }
 
-
-        managmentCart = ManagmentCart(this)
 
         setVariable()
         initCartList()
@@ -34,12 +41,8 @@ class CartActivity : BaseActivity() {
     private fun initCartList() {
         binding.viewCart.layoutManager =
             LinearLayoutManager(this, LinearLayoutManager.VERTICAL, false)
-        binding.viewCart.adapter =
-            CartAdapter(managmentCart.getListCart(), this, object : ChangeNumberItemsListener {
-                override fun onChanged() {
-                    calculateCart()
-                }
-            })
+        binding.viewCart.adapter =cartAdapter
+
 
         with(binding) {
             emptyTxt.visibility =

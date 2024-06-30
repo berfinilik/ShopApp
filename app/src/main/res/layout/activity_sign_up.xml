@@ -23,7 +23,7 @@
         android:textStyle="bold" />
 
     <EditText
-        android:id="@+id/username"
+        android:id="@+id/emailet"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:layout_below="@id/signup"
@@ -43,7 +43,7 @@
         android:id="@+id/email"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:layout_below="@id/username"
+        android:layout_below="@id/emailet"
         android:layout_marginStart="10dp"
         android:layout_marginTop="10dp"
         android:layout_marginEnd="10dp"
@@ -66,7 +66,7 @@
         android:layout_marginEnd="10dp"
         android:layout_marginBottom="10dp"
         android:background="#30ffffff"
-        android:drawableLeft="@drawable/ic_baseline_info_24"
+        android:drawableLeft="@drawable/password"
         android:drawablePadding="20dp"
         android:hint="Parola"
         android:inputType="textPassword"
@@ -84,7 +84,7 @@
         android:layout_marginEnd="10dp"
         android:layout_marginBottom="10dp"
         android:background="#30ffffff"
-        android:drawableLeft="@drawable/ic_baseline_info_24"
+        android:drawableLeft="@drawable/password"
         android:drawablePadding="20dp"
         android:hint="Parolayı tekrar giriniz"
         android:inputType="textPassword"

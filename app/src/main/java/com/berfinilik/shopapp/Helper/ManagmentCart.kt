@@ -23,10 +23,6 @@ class ManagmentCart(val context: Context) {
         tinyDB.putListObject("CartList", listFood)
         Toast.makeText(context, "Sepete Eklendi", Toast.LENGTH_SHORT).show()
     }
-
-
-
-
     fun getListCart(): ArrayList<ItemsModel> {
         return tinyDB.getListObject("CartList") ?: arrayListOf()
     }

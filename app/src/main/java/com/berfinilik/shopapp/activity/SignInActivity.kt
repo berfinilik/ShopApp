@@ -22,7 +22,7 @@ class SignInActivity : AppCompatActivity() {
         auth = Firebase.auth
 
         binding.loginbtn.setOnClickListener {
-            val email = binding.username.text.toString()
+            val email = binding.emailet.text.toString()
             val password = binding.password.text.toString()
 
             auth.signInWithEmailAndPassword(email, password)

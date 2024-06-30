@@ -35,6 +35,7 @@ class MainViewModel() : ViewModel() {
                     }
                 }
                 _banner.value = lists
+
             }
 
             override fun onCancelled(error: DatabaseError) {
