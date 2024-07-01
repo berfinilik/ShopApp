@@ -45,6 +45,5 @@ class ColorAdapter(val items: MutableList<String>) :
             holder.binding.colorLayout.setBackgroundResource(R.drawable.grey_bg)
         }
     }
-
     override fun getItemCount(): Int = items.size
 }

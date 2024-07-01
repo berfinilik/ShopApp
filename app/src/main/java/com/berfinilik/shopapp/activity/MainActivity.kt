@@ -11,6 +11,7 @@ import androidx.viewpager2.widget.CompositePageTransformer
 import androidx.viewpager2.widget.MarginPageTransformer
 import com.berfinilik.shopapp.Adapter.BrandAdapter
 import com.berfinilik.shopapp.Adapter.PopularAdapter
+import com.berfinilik.shopapp.Model.BrandModel
 import com.berfinilik.shopapp.Model.SliderModel
 import com.berfinilik.shopapp.Adapter.SliderAdapter
 import com.berfinilik.shopapp.ViewModel.MainViewModel
@@ -34,11 +35,18 @@ class MainActivity : BaseActivity() {
         val currentUser = auth.currentUser
         val email = currentUser?.email
 
-
         initBanner()
         initBrand()
         initPopular()
         initBottomMenu()
+
+        binding.chatbotIcon.setOnClickListener {
+            startActivity(
+                Intent(
+                    this,ChatBotActivity::class.java
+                )
+            )
+        }
     }
 
     private fun initBottomMenu() {
@@ -52,7 +60,7 @@ class MainActivity : BaseActivity() {
         }
         binding.cartAnasayfa.setOnClickListener {
             startActivity(
-                Intent(this,MainActivity::class.java)
+                Intent(this, MainActivity::class.java)
             )
         }
         binding.cartFavoriler.setOnClickListener {
@@ -71,6 +79,7 @@ class MainActivity : BaseActivity() {
                 )
             )
         }
+
     }
 
     private fun initBanner() {
@@ -101,13 +110,23 @@ class MainActivity : BaseActivity() {
 
     private fun initBrand() {
         binding.progressBarBrand.visibility = View.VISIBLE
-        viewModel.brands.observe(this, Observer {
+        viewModel.brands.observe(this, Observer { brands ->
             binding.viewBrand.layoutManager =
                 LinearLayoutManager(this@MainActivity, LinearLayoutManager.HORIZONTAL, false)
-            binding.viewBrand.adapter = BrandAdapter(it)
+            binding.viewBrand.adapter = BrandAdapter(brands.toMutableList()) { brand ->
+                loadPopularByBrand(brand)
+            }
             binding.progressBarBrand.visibility = View.GONE
         })
         viewModel.loadBrand()
+    }
+
+    private fun loadPopularByBrand(brand: BrandModel) {
+        binding.progressBarPopular.visibility = View.VISIBLE
+        viewModel.getPopularByBrand(brand.id.toLong()).observe(this, Observer { products ->
+            binding.viewPopular.adapter = PopularAdapter(products)
+            binding.progressBarPopular.visibility = View.GONE
+        })
     }
 
     private fun initPopular() {
@@ -117,6 +136,6 @@ class MainActivity : BaseActivity() {
             binding.viewPopular.adapter = PopularAdapter(it)
             binding.progressBarPopular.visibility = View.GONE
         })
-        viewModel.loadPupolar()
+        viewModel.loadPopular()
     }
 }

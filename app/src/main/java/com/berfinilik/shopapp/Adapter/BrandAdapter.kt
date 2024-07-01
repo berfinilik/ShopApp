@@ -12,8 +12,10 @@ import com.berfinilik.shopapp.R
 import com.berfinilik.shopapp.databinding.ViewholderBrandBinding
 import com.bumptech.glide.Glide
 
-class BrandAdapter(val items: MutableList<BrandModel>) :
-    RecyclerView.Adapter<BrandAdapter.Viewholder>() {
+class BrandAdapter(
+    private val items: MutableList<BrandModel>,
+    private val onItemClick: (BrandModel) -> Unit
+) : RecyclerView.Adapter<BrandAdapter.Viewholder>() {
 
     private var selectedPosition = -1
     private var lastSelectedPosition = -1
@@ -41,6 +43,7 @@ class BrandAdapter(val items: MutableList<BrandModel>) :
             selectedPosition = position
             notifyItemChanged(lastSelectedPosition)
             notifyItemChanged(selectedPosition)
+            onItemClick(item)
         }
         holder.binding.titleTv.setTextColor(context.resources.getColor(R.color.white))
         if (selectedPosition == position) {

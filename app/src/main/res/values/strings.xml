@@ -1,5 +1,5 @@
-<resources>
-    <string name="app_name">ShopApp</string>
+ <resources>
+    <string name="app_name">Ayakkabı Diyarı</string>
     <string name="intro_title">Tarzınızı Keşfedin</string>
     <string name="intro_text"><font color="#6033ba">\nAyakkabı Dünyası</font></string>
     <string name="intro_signin">Zaten hesabınız var mı?<font color="#6033ba">Giriş yapın</font></string>

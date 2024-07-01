@@ -19,6 +19,5 @@ class  IntroActivity : BaseActivity() {
             startActivity(Intent(this@IntroActivity, SignUpActivity::class.java))
 
         }
-
     }
 }

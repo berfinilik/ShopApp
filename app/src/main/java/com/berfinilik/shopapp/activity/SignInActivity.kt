@@ -2,9 +2,9 @@ package com.berfinilik.shopapp.activity
 
 import android.content.Intent
 import android.os.Bundle
-import android.widget.Toast
 import androidx.appcompat.app.AppCompatActivity
 import com.berfinilik.shopapp.databinding.ActivitySignInBinding
+import com.google.android.material.snackbar.Snackbar
 import com.google.firebase.auth.FirebaseAuth
 import com.google.firebase.auth.ktx.auth
 import com.google.firebase.ktx.Firebase
@@ -33,7 +33,7 @@ class SignInActivity : AppCompatActivity() {
                         intent.putExtra("userName", user?.displayName)
                         startActivity(intent)
                     } else {
-                        Toast.makeText(this, "Giriş başarısız.", Toast.LENGTH_SHORT).show()
+                        Snackbar.make(binding.root, "Giriş başarısız", Snackbar.LENGTH_SHORT).show()
                     }
                 }
         }

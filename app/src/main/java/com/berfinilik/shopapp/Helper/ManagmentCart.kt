@@ -3,7 +3,6 @@ package com.berfinilik.shopapp.Helper
 import android.content.Context
 import android.widget.Toast
 import com.berfinilik.shopapp.Model.ItemsModel
-import com.berfinilik.shopapp.Model.Product
 
 
 class ManagmentCart(val context: Context) {
@@ -38,7 +37,7 @@ class ManagmentCart(val context: Context) {
     }
 
     fun plusItem(listFood: ArrayList<ItemsModel>, position: Int, listener: ChangeNumberItemsListener) {
-        (listFood[position] as Product).numberInCart++
+        listFood[position].numberInCart++
         tinyDB.putListObject("CartList", listFood)
         listener.onChanged()
     }
@@ -52,4 +51,9 @@ class ManagmentCart(val context: Context) {
         }
         return fee
     }
+
+    fun clearCart() {
+        tinyDB.remove("CartList")
+    }
+
 }

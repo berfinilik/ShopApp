@@ -6,7 +6,6 @@ import androidx.recyclerview.widget.RecyclerView
 import com.berfinilik.shopapp.Helper.ChangeNumberItemsListener
 import com.berfinilik.shopapp.Helper.ManagmentCart
 import com.berfinilik.shopapp.Model.ItemsModel
-import com.berfinilik.shopapp.Model.Product
 import com.berfinilik.shopapp.databinding.ViewholderCartBinding
 import com.bumptech.glide.Glide
 import com.bumptech.glide.load.resource.bitmap.CenterCrop

@@ -30,6 +30,24 @@
                 android:background="@drawable/background"
                 android:orientation="horizontal">
 
+                <TextView
+                    android:id="@+id/textView4"
+                    android:layout_width="188dp"
+                    android:layout_height="match_parent"
+                    android:text="Hoşgeldiniz"
+                    android:textColor="@color/white"
+                    android:textSize="20sp" />
+
+                <ImageView
+                    android:id="@+id/chatbotIcon"
+                    android:layout_width="77dp"
+                    android:layout_height="38dp"
+                    android:layout_gravity="clip_horizontal|right|end"
+                    android:layout_marginLeft="150dp"
+                    android:contentDescription="Chatbot Icon"
+                    android:scaleType="centerInside"
+                    android:src="@drawable/bot" />
+
                 <LinearLayout
                     android:layout_width="wrap_content"
                     android:layout_height="match_parent"
@@ -37,13 +55,6 @@
                     android:layout_weight="1"
                     android:orientation="vertical">
 
-                    <TextView
-                        android:id="@+id/textView4"
-                        android:layout_width="match_parent"
-                        android:layout_height="wrap_content"
-                        android:text="Hoşgeldiniz"
-                        android:textColor="@color/white"
-                        android:textSize="20sp" />
 
                 </LinearLayout>
 
@@ -189,6 +200,7 @@
     </ScrollView>
 
     <androidx.coordinatorlayout.widget.CoordinatorLayout
+        android:id="@+id/coordinatorLayout"
         android:layout_width="match_parent"
         android:layout_height="60dp"
         android:layout_marginStart="12dp"
@@ -284,32 +296,6 @@
                         android:layout_height="wrap_content"
                         android:layout_marginTop="4dp"
                         android:text="Favorilerim"
-                        android:textAlignment="center"
-                        android:textColor="@color/white"
-                        android:textSize="10sp" />
-                </LinearLayout>
-
-                <LinearLayout
-                    android:id="@+id/cartSiparis"
-                    android:layout_width="0dp"
-                    android:layout_height="match_parent"
-                    android:layout_weight="0.2"
-                    android:orientation="vertical">
-
-                    <ImageView
-                        android:id="@+id/iv_siparis"
-                        android:layout_width="22dp"
-                        android:layout_height="22dp"
-                        android:layout_gravity="center"
-                        android:layout_marginTop="8dp"
-                        app:srcCompat="@drawable/order" />
-
-                    <TextView
-                        android:id="@+id/textView84"
-                        android:layout_width="match_parent"
-                        android:layout_height="wrap_content"
-                        android:layout_marginTop="4dp"
-                        android:text="Siparişim"
                         android:textAlignment="center"
                         android:textColor="@color/white"
                         android:textSize="10sp" />

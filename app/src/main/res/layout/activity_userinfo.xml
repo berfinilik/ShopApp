@@ -81,7 +81,7 @@
             android:inputType="text" />
 
         <Button
-            android:id="@+id/buttonGuncelle"
+            android:id="@+id/btnAyakkabiNoGuncelle"
             android:layout_width="115dp"
             android:layout_height="wrap_content"
             android:layout_marginStart="240dp"
@@ -174,6 +174,19 @@
                 app:layout_constraintEnd_toEndOf="parent"
                 app:layout_constraintTop_toTopOf="parent" />
 
+            <Button
+                android:id="@+id/btnCepGuncelle"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="8dp"
+                android:layout_marginEnd="4dp"
+                android:backgroundTint="#FDF9F8"
+                android:text="Güncelle"
+                android:textColor="@color/black"
+                android:textSize="12sp"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintTop_toTopOf="parent" />
+
         </androidx.constraintlayout.widget.ConstraintLayout>
 
         <androidx.constraintlayout.widget.ConstraintLayout
@@ -204,6 +217,19 @@
                 android:layout_marginTop="16dp"
                 android:layout_marginEnd="112dp"
                 android:hint="E-mail"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintTop_toTopOf="parent" />
+
+            <Button
+                android:id="@+id/btnMailGuncelle"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="4dp"
+                android:layout_marginEnd="4dp"
+                android:backgroundTint="#FBF8F8"
+                android:text="Güncelle"
+                android:textColor="@color/black"
+                android:textSize="12sp"
                 app:layout_constraintEnd_toEndOf="parent"
                 app:layout_constraintTop_toTopOf="parent" />
 
