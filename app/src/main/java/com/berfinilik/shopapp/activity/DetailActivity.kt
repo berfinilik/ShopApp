@@ -88,7 +88,7 @@ class DetailActivity : BaseActivity() {
         binding.ratingTextView.text = "${item.rating} "
         binding.addToCartBtn.setOnClickListener {
             item.numberInCart = numberOder
-            managmentCart.insertFood(item)
+            managmentCart.insertItem(item)
             Snackbar.make(binding.root, "Sepete eklendi", Snackbar.LENGTH_SHORT).show()
         }
         binding.backBtn.setOnClickListener { finish() }
