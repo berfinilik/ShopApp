@@ -1,3 +1,5 @@
+Ayakkabı Diyarı: Yapay Zeka Destekli E-Ticaret Mobil Uygulama Projesi
+
 ![WhatsApp Image 2024-07-01 at 18 30 07](https://github.com/berfinilik/ShopApp/assets/140311905/96aaf20d-0fa0-4703-aa32-d99260fd94f9)  ![WhatsApp Image 2024-07-01 at 18 30 57](https://github.com/berfinilik/ShopApp/assets/140311905/e9aee272-1b80-489b-bb23-acd7760807f7)  ![WhatsApp Image 2024-07-01 at 18 30 32 (1)](https://github.com/berfinilik/ShopApp/assets/140311905/c02397a5-6408-4f67-b481-237f1e2a5b29) 
 ![WhatsApp Image 2024-07-01 at 18 31 53](https://github.com/berfinilik/ShopApp/assets/140311905/9f78db8e-813a-43c8-9ee7-6f460457d3e4) ![WhatsApp Image 2024-07-01 at 18 29 36](https://github.com/berfinilik/ShopApp/assets/140311905/f8747bfc-dfab-41a9-97de-56844282c595) 
 ![Wha![WhatsApp Image 2024-07-01 at 18 30 32](https://github.com/berfinilik/ShopApp/assets/140311905/43bceb30-d9a0-4337-9751-ba44afbf3913) ts![WhatsApp Image 2024-07-01 at 18 33 59](https://github.com/berfinilik/ShopApp/assets/140311905/6d665d06-5292-4dba-8f75-d76933b74638)
